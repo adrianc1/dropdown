@@ -12,7 +12,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',  
-      title: 'New Shit',
+      title: 'new temp',
     }),
   ],
   output: {

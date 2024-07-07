@@ -1,84 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/b293c74bcc.js" crossorigin="anonymous"></script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://kit.fontawesome.com/b293c74bcc.js"
+			crossorigin="anonymous"
+		></script>
 
-    <title> Todo List ! </title>
-</head>
-<body>
+		<title>Dropdown Menu</title>
+	</head>
+	<body>
+		<h1>Hey you piece of shit! This is a dropdown menu!</h1>
 
-    <!-- side nav bar -->
-    <nav id="nav">
-        <h2 id="my-projects-title" class="nav-title"> My Projects </h2>
-        <div id="my-projects">
-        </div>
+		<br />
+		<div class="container">
+			<button class="first">Show/Hide First Menu</button>
+			<ul class="list-container">
+				<li class="list-item">first</li>
+				<li class="list-item">second</li>
+				<li class="list-item">third</li>
+				<li class="list-item">fourth</li>
+			</ul>
+		</div>
 
-        <div id="create-list-container">
-            <button id="create" class="create-btn"> Create New Task </button>
-            <button id="create-pjt" class="create-btn"> Create New Project </button>
-        </div>
-    </nav>
+		<br />
+		<div class="container">
+			<button class="second">Show/Hide Second Menu</button>
+			<ul class="list-container">
+				<li class="list-item">ABC</li>
+				<li class="list-item">DEF</li>
+				<li class="list-item">GHI</li>
+				<li class="list-item">JKL</li>
+			</ul>
+		</div>
 
-<!-- main content  -->
- <main id="main">
-    <header id="header">
-        <h2 id="current-date-title">Today</h2>
-        <h3 id="current-project-title"></h3>
-    </header>
-        <div id="content"></div>
- </main>
-
-
-    <!-- user input modal forms  -->
-    <div id="modal-container">
-        <div id="modal">
-
-            <!-- Task Creation Form -->
-            <form action="" id="task-form" autocomplete="off">
-                
-                <br>
-                <br>
-
-                <label for="task-title">Title:</label>
-                <input type="text" id="task-title">
-
-                <label for="task-description">Description:</label>
-                <input type="text" id="task-description">
-
-                <div id="priority-container">
-                    <label for="low-pri">Low Priority</label>
-                    <input type="radio" id="low-pri" name="priority" value="low">
-            
-                    <label for="med-pri">Med Priority</label>
-                    <input type="radio" id="med-pri" name="priority" value="med">
-            
-                    <label for="high-pri">High Priority</label>
-                    <input type="radio" id="high-pri" name="priority" value="high">
-                </div>
-                <br>
-                <label for="date">Due Date:</label>
-                <input type="date" id="date" name="date">
-                <br>
-                <!-- submit button -->
-                <button type="button" for="input" id="submit"> Submit </button>
-                <br>
-                <!-- show the list in the console button -->
-                <button id="show">show the list!</button>
-                </form>
-
-                <!-- Get Folder information  -->
-                <form action="" id="folder-form" >
-
-                    <label for="project-title">New Project Title:</label>
-                    <input type="text" id="project-title">
-
-                    <button type="button" for="project-title" id="submit-project">Submit</button>
-
-
-                </form>
-        </div>
-    </div>
-</body>
+		<div class="container">
+			<button class="third">Show/Hide Second Menu</button>
+			<ul class="list-container">
+				<li class="list-item">xx</li>
+				<li class="list-item">ddd</li>
+				<li class="list-item">s</li>
+				<li class="list-item">qq</li>
+			</ul>
+		</div>
+	</body>
 </html>

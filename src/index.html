@@ -11,38 +11,56 @@
 		<title>Dropdown Menu</title>
 	</head>
 	<body>
-		<h1>Hey you piece of shit! This is a dropdown menu!</h1>
-
+		<h1>Hey you piece of shit! This is a image carosoel!!</h1>
 		<br />
-		<div class="container">
-			<button class="first">Show/Hide First Menu</button>
-			<ul class="list-container">
-				<li class="list-item">first</li>
-				<li class="list-item">second</li>
-				<li class="list-item">third</li>
-				<li class="list-item">fourth</li>
-			</ul>
-		</div>
 
-		<br />
-		<div class="container">
-			<button class="second">Show/Hide Second Menu</button>
-			<ul class="list-container">
-				<li class="list-item">ABC</li>
-				<li class="list-item">DEF</li>
-				<li class="list-item">GHI</li>
-				<li class="list-item">JKL</li>
-			</ul>
-		</div>
-
-		<div class="container">
-			<button class="third">Show/Hide Second Menu</button>
-			<ul class="list-container">
-				<li class="list-item">xx</li>
-				<li class="list-item">ddd</li>
-				<li class="list-item">s</li>
-				<li class="list-item">qq</li>
-			</ul>
+		<div id="frame">
+			<div id="container">
+				<div class="slide active">
+					<img src="./logo1.png" alt="" />
+				</div>
+				<div class="slide">
+					<img src="./logo2.png" alt="" />
+				</div>
+				<div class="slide">
+					<img src="./logo3.jpg" alt="" />
+				</div>
+			</div>
+			<nav id="nav">
+				<div class="nav-container">
+					<div class="dot">
+						<input
+							type="radio"
+							name="slider"
+							id="slide-0"
+							value="0"
+							class="radio-nav"
+						/>
+					</div>
+					<div class="dot">
+						<input
+							type="radio"
+							name="slider"
+							id="slide-1"
+							value="1"
+							class="radio-nav"
+						/>
+					</div>
+					<div class="dot">
+						<input
+							type="radio"
+							name="slider"
+							id="slide-2"
+							value="2"
+							class="radio-nav"
+						/>
+					</div>
+				</div>
+			</nav>
+			<div class="arrows">
+				<i class="fa-solid fa-arrow-left"></i>
+				<i class="fa-solid fa-arrow-right"></i>
+			</div>
 		</div>
 	</body>
 </html>

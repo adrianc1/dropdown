@@ -1,14 +1,24 @@
 import './style.css';
+import { prevFunction, nextFunction } from './app';
 
 (() => {
-	const btns = document.querySelectorAll('button');
+	const rightArrow = document.querySelector('.fa-arrow-right');
+	const leftArrow = document.querySelector('.fa-arrow-left');
 
-	btns.forEach((btn) => {
-		btn.addEventListener('click', showHideMenu);
-	});
+	leftArrow.addEventListener('click', prevFunction);
 
-	function showHideMenu(e) {
-		const ul = e.target.nextElementSibling;
-		ul.classList.toggle('hidden');
-	}
+	rightArrow.addEventListener('click', nextFunction);
 })();
+
+// (() => {
+// 	const btns = document.querySelectorAll('button');
+
+// 	btns.forEach((btn) => {
+// 		btn.addEventListener('click', showHideMenu);
+// 	});
+
+// 	function showHideMenu(e) {
+// 		const ul = e.target.nextElementSibling;
+// 		ul.classList.toggle('hidden');
+// 	}
+// })();

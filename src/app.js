@@ -62,6 +62,7 @@ function updateNav(index) {
 
 (function init() {
 	document.getElementById('slide-0').checked = true;
+	setInterval(nextFunction, 3000);
 })();
 
 export { prevFunction, nextFunction };
